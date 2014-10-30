@@ -57,5 +57,4 @@ class Centaur
     @tired = 0
   end
 
-
 end
