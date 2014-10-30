@@ -103,16 +103,13 @@ class CentaurTest < Minitest::Test
     centaur.shoot
     centaur.run
     centaur.shoot
-
     assert centaur.cranky?
 
     centaur.lay_down
     centaur.sleep
-
     refute centaur.cranky?
 
     centaur.stand_up
-
     assert_equal "Twang!!!", centaur.shoot
     assert_equal "Clop clop clop clop!!!", centaur.run
   end

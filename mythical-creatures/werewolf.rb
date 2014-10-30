@@ -8,15 +8,15 @@ class Werewolf
   end
 
   def human?
-    @human == true
+    @human
   end
 
   def change!
-    @human == true ? @human = false : @human = true
+    @human = !@human
   end
 
   def werewolf?
-    @human == false
+    !human?
   end
 
 end
