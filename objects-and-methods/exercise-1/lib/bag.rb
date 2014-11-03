@@ -1,4 +1,3 @@
-require_relative 'candy'
 class Bag
   attr_reader :candies
 
@@ -7,21 +6,19 @@ class Bag
   end
 
   def empty?
-    @candies.empty?
+    candies.empty?
+  end
+
+  def << (candy)
+    candies << candy
   end
 
   def count
-    @candies.count
-  end
-
-  def <<(candy)
-    @candies << candy
+    candies.count
   end
 
   def contains?(type)
-    candies.any? do |candy|
-      candy.type == type
-    end
+    candies.any? { |candy| candy.type == type }
   end
 
 end
