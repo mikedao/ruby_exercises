@@ -1,8 +1,8 @@
 class Child
-  attr_reader :name, :age
-  def initialize(name, age)
-    @name = name
-    @age = age
-  end
+  attr_accessor :name, :age
 
+  def initialize(name, age)
+    self.name = name
+    self.age = age
+  end
 end

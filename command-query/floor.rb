@@ -1,15 +1,16 @@
 class Floor
+  attr_accessor :dirty
 
   def initialize
-    @dirty = true
+    self.dirty = true
   end
 
   def dirty?
-    @dirty
+    dirty
   end
 
   def wash
-    @dirty = false
+    self.dirty = false
   end
-  
+
 end

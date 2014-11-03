@@ -1,15 +1,16 @@
 class Baby
+  attr_accessor :tired
 
   def initialize
-    @tired = true
+    self.tired = true
   end
 
   def tired?
-    @tired
+    tired
   end
 
   def nap
-    @tired = false
+    self.tired = false
   end
-  
+
 end

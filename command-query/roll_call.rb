@@ -1,24 +1,16 @@
 class RollCall
-  attr_reader :names
+  attr_accessor :names
 
   def initialize
-    @names = []
-    @sorted = []
-  end
-
-  def <<(name)
-    @names <<name
+    self.names = []
   end
 
   def longest_name
-    @names.sort{|x, y| y.length <=> x.length}[0]
+    self.names.max_by { |n| n.length }
+  end
+
+  def <<(name)
+    self.names << name
   end
 
 end
-
-# roll_call = RollCall.new
-# roll_call << "Ann"
-# roll_call << "Alexandra"
-# roll_call << "Roger"
-#
-# puts roll_call.longest_name

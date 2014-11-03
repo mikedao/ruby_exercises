@@ -1,15 +1,16 @@
 class Teenager
+  attr_accessor :drunk
 
   def initialize
-    @drunk = false
-  end
-
-  def drunk?
-    @drunk
+    self.drunk = false
   end
 
   def consume_an_alcoholic_beverage
-    @drunk = true
+    self.drunk = true
   end
-  
+
+  def drunk?
+    drunk
+  end
+
 end

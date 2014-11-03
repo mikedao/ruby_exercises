@@ -1,17 +1,17 @@
 class Santa
-  attr_reader :cookies_eaten
+  attr_accessor :cookies_eaten
 
   def initialize
-    @fits = true
-    @cookies_eaten = 0
+    self.cookies_eaten = 0
   end
 
   def fits?
-    @cookies_eaten < 3
+    cookies_eaten > 2 ? false : true
   end
 
   def eats_cookies
-    @cookies_eaten += 1
+    self.cookies_eaten += 1
   end
+
 
 end

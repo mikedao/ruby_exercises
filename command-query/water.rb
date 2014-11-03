@@ -1,12 +1,12 @@
 class Water
-  attr_reader :temperature
+  attr_accessor :temperature
 
   def initialize
-    @temperature = 295
+    self.temperature = 295
   end
 
   def heat
-    @temperature += 1
+    self.temperature += 1
   end
-  
+
 end

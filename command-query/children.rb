@@ -1,16 +1,15 @@
 class Children
+  attr_accessor :list
 
   def initialize
-    @children = []
-  end
-
-  def eldest
-    @children.sort{|x, y| y.age <=> x.age}[0]
+    self.list = []
   end
 
   def <<(child)
-    @children << child
+    self.list << child
   end
 
-
+  def eldest
+    self.list.max_by { |child| child.age }
+  end
 end

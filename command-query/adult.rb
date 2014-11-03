@@ -1,17 +1,19 @@
 class Adult
-
+  attr_accessor :sober, :drinks
 
   def initialize
-    @sober = true
-    @drinks = 0
-  end
-
-  def sober?
-    @drinks < 3
+    self.drinks = 0
+    self.sober = true
   end
 
   def consume_an_alcoholic_beverage
-    @drinks += 1
+    self.drinks += 1
   end
+
+  def sober?
+    self.sober = false if drinks > 2
+    sober
+  end
+
 
 end

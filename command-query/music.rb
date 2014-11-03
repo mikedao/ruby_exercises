@@ -1,15 +1,16 @@
 class Music
+  attr_accessor :loud
 
   def initialize
-    @loud = false
+    self.loud = false
   end
 
   def loud?
-    @loud
+    loud
   end
 
   def turn_up
-    @loud = true
+    self.loud = true
   end
 
 end

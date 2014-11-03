@@ -1,15 +1,16 @@
 class LeatherChair
+  attr_accessor :faded
 
   def initialize
-    @faded = false
+    self.faded = false
   end
 
   def faded?
-    @faded
+    faded
   end
 
   def expose_to_sunlight
-    @faded = true
+    self.faded = true
   end
 
 

@@ -1,15 +1,16 @@
 class Dog
+  attr_accessor :hungry
 
   def initialize
-    @hungry = true
-  end
-
-  def hungry?
-    @hungry
+    self.hungry = true
   end
 
   def eat
-    @hungry = false
+    self.hungry = false
+  end
+
+  def hungry?
+    hungry
   end
   
 end

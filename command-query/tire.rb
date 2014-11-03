@@ -1,15 +1,16 @@
 class Tire
+  attr_accessor :flat
 
   def initialize
-    @flat = false
+    self.flat = false
   end
 
   def flat?
-    @flat
+    flat?
   end
 
   def blow_out
-    @flat = true
+    self.flat = true
   end
-  
+
 end

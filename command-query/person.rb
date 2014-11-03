@@ -1,12 +1,12 @@
 class Person
-  attr_reader :age
+  attr_accessor :age
 
   def initialize
-    @age = 0
+    self.age = 0
   end
 
   def happy_birthday
-    @age += 1
+    self.age += 1
   end
-
+  
 end

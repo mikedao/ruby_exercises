@@ -1,13 +1,12 @@
 class Drops
-  attr_reader :count
+  attr_accessor :count
 
   def initialize
-    @count = 0
+    self.count = 0
   end
 
   def drip
-    @count += 1
+    self.count += 1
   end
   
-
 end

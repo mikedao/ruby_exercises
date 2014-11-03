@@ -1,15 +1,16 @@
 class Teeth
+  attr_accessor :clean
 
   def initialize
-    @clean = false
+    self.clean = false
   end
 
   def clean?
-    @clean
+    clean
   end
 
   def brush
-    @clean = true
+    self.clean = true
   end
   
 end

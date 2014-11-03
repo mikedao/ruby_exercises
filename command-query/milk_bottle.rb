@@ -1,15 +1,16 @@
 class MilkBottle
+  attr_accessor :full
 
   def initialize
-    @full = true
+    self.full = true
   end
 
   def full?
-    @full
+    full
   end
 
   def spill
-    @full = false
+    self.full = false
   end
   
 

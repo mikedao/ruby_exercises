@@ -1,12 +1,17 @@
 class Pills
-  attr_reader :count
+  attr_accessor :number
 
   def initialize
-    @count = 60
+    self.number = 60
+  end
+
+  def count
+    number
   end
 
   def pop
-    @count -= 1
+    self.number -= 1
   end
-  
+
+
 end

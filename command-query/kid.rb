@@ -1,16 +1,17 @@
 class Kid
-  attr_reader :grams_of_sugar_eaten
+  attr_accessor :grams_of_sugar_eaten, :hyperactive
 
   def initialize
-    @grams_of_sugar_eaten = 0
+    self.grams_of_sugar_eaten = 0
+    self.hyperactive = false
   end
 
   def eat_candy
-    @grams_of_sugar_eaten += 5
+    self.grams_of_sugar_eaten += 5
   end
 
   def hyperactive?
-    @grams_of_sugar_eaten > 59
+    true if grams_of_sugar_eaten > 59
   end
-  
+
 end
